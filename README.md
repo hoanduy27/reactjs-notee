@@ -10,17 +10,17 @@ In the project directory, you can run:
 
 ### Run app in development mode
 - Run the server (NodeJS RESTful API)
-`cd server`
-`npx nodemon index`
+    - `cd server`
+    - `npx nodemon index`
 
 - Run the app
-`cd ..`
-`npm run start_dev`
+    - `cd ..`
+    - `npm run start_dev`
 
 The app will run at [http://localhost:3000](http://localhost:3000).
 
 ### Deploy app
-`npm build`
-`npm start`
+- `npm build`
+- `npm start`
 
 The app will run at [http://localhost:5000](http://localhost:5000).
