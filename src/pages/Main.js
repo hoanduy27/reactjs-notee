@@ -43,23 +43,23 @@ class Main extends Component {
                     <h2>
                         What can you do?
                     </h2>
-                    <p>
-                        <ul>
-                            <li>Create/Remove a category</li>
-                            <li>Create/Remove a task</li>
-                            <li>Edit your task: task name, task description, task progress</li>
-                        </ul>
-                    </p>
+                    
+                    <ul>
+                        <li>Create/Remove a category</li>
+                        <li>Create/Remove a task</li>
+                        <li>Edit your task: task name, task description, task progress</li>
+                    </ul>
+                    
                 </div>
                 <div className="main-start">
                     <h2>
-                        How to start?
+                        How to start? (For testing)
                     </h2>
                     <p>
                         This is an application as a result of self-studying <span className="text-primary">Reactjs, Nodejs</span> and <span className="text-primary">PostgreSQL</span>.
                     </p>
                     <p>
-                        The <span className="text-primary">Sign up</span> function has not been implemented yet. But you can log in by user <span className="text-success">duynguyen</span> (username: <b>duynguyen</b>, password: <b>duynguyen</b>) or user <span className="text-success">noteen</span> (username: <b>noteen</b>, password: <b>noteen</b>)
+                        You can click to <span className="text-primary">Sign up</span> to create a new user. You can also log in by <span className="text-success">duynguyen</span> (username: <b>duynguyen</b>, password: <b>duynguyen</b>) or <span className="text-success">noteen</span> (username: <b>noteen</b>, password: <b>noteen</b>) that I've created for testing.
                     </p>
                 </div>
 

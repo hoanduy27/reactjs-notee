@@ -133,6 +133,21 @@ app.post("/noteeAPI/edit_task", async(req, res) => {
     }
 });
 
+
+app.post("/noteeAPI/register", async(req, res) => {
+    try {
+        const {username, name, password} = req.body;
+        const result = await pool.query(
+            "SELECT * FROM register(($1), ($2), ($3)) as success",
+            [username, name, password]
+        );
+        res.json(result.rows[0]);
+    } catch (err) {
+        console.error(err.message);
+    }
+});
+
+
 app.get('/*', (req, res) => {
     res.sendFile(path.join(__dirname, '../build/index.html'));
 });

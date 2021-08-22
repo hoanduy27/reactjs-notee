@@ -1,5 +1,4 @@
 import axios from 'axios';
-import configData from '../config.json';
 
 let API_URL = "/noteeAPI";
 export default function callApi(endpoint, method = 'GET', body, process){

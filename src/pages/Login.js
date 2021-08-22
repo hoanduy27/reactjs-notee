@@ -1,5 +1,4 @@
 import { Component } from 'react';
-import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 import callApi from '../api/api.js';
 
 class Login extends Component{
@@ -45,7 +44,7 @@ class Login extends Component{
     }
   }
   render() {
-    return localStorage.getItem("username") ? <Redirect to="/home"/> : (
+    return(
       <div>
         <div className="col-md-6 m-auto">
           <h2 className="text-center">Welcome back!</h2>

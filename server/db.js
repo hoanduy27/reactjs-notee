@@ -1,3 +1,4 @@
+const db = require('./db.json');
 const Pool = require("pg").Pool;
 
 // const pool = new Pool({
@@ -7,7 +8,8 @@ const Pool = require("pg").Pool;
 //     host: "localhost",
 //     port: 5432
 // });
-const DB_URL = "postgres://jwxnwipgpdhoer:fc5f5e51b3a51bc99b1bf6d6955c5abc8d6cdbb8d6980ac76b5bfa5a22203927@ec2-54-147-93-73.compute-1.amazonaws.com:5432/datrd6m6ekecfa"
+
+const DB_URL = db.DB_URL;
 const pool = new Pool({
     connectionString: DB_URL,
     ssl:{
